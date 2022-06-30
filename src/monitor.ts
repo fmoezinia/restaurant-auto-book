@@ -123,6 +123,7 @@ const refreshAvailability = async () => {
 
 const regenerateHeaders = async () => {
   try {
+    log.info("Finding res for ", email);
     if (!email || !password) {
       log.warn(
         "Email or password not set, did you forget to set the environment variables?"
